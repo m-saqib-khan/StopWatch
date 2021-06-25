@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image:url("a.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-family: 'Orbitron', sans-serif;
+
+    }
+
+    h2 {
+        display: inline-block;
+        background-color: white;
+        color: black;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 50px;
+        margin: 5px;
+        height: 70px;
+        width: 12%;
+    }
+    button{
+        margin-top: 10px;
+        padding: 10px;
+        margin-left: 10px;
+        color: black;
+        background-color: white;
+        opacity: 0.8;
+        border-radius: 8px;
+        border: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    button:hover{
+        color: white;
+        background-color: transparent;
+        border: 2px solid white;
+    }
+    .Head{
+        margin-top: 200px;
+    }
+</style>
+
+<body>
+    <div class="Head">
+        <div>
+            <h2 id="min">0</h2>
+            <h2 id="sec">0</h2>
+            <h2 id="mini">0</h2>
+        </div>
+        <div>
+            <button id="strt" onclick="start()">START</button>
+            <button onclick="pause()">PAUSE</button>
+            <button onclick="reset()">RESET</button>
+        </div>
+    </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>
